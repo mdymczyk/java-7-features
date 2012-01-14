@@ -10,7 +10,7 @@ public class MultiCatch {
 
     private void oldMultiCatch() {
         try {
-            Class string = Class.forName("java.lang.String");
+            Class<?> string = Class.forName("java.lang.String");
             string.getMethod("toString");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -21,7 +21,7 @@ public class MultiCatch {
 
     private void newMultiCatch() {
         try {
-            Class string = Class.forName("java.lang.String");
+            Class<?> string = Class.forName("java.lang.String");
             string.getMethod("toString");
         } catch (ClassNotFoundException | NoSuchMethodException e) {
             e.printStackTrace();

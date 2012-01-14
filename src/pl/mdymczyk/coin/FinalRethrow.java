@@ -1,14 +1,16 @@
 package pl.mdymczyk.coin;
 
+@SuppressWarnings("serial")
 public class FinalRethrow {
 
-    static class A extends Exception {
+	static class A extends Exception {
     }
 
     static class B extends Exception {
     }
 
-    private void testFinalRethrow(boolean test, boolean test2) throws B {
+    @SuppressWarnings("unused")
+	private void testFinalRethrow(boolean test, boolean test2) throws B {
         try {
             if (test) {
                 throw new A();

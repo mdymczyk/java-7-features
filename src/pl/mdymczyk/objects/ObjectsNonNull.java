@@ -2,9 +2,10 @@ package pl.mdymczyk.objects;
 
 import java.util.Objects;
 
+@SuppressWarnings("unused")
 public class ObjectsNonNull {
 
-    private Object value1;
+	private Object value1;
     private Object value2;
 
     public static void main(String[] args) {
